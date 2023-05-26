@@ -1,40 +1,7 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GRG6T9T427"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+<?php
+    include 'include/templates/head.php';
+?>
 
-    gtag('config', 'G-GRG6T9T427');
-    </script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="descripcion" content="Compra tus peluches de lana hechos totalmente a mano, 100% algodon y de gran calidad. Peluches tiernos, ideales para niños y niñas.">
-    <meta name="keywords" content="peluche, lana, amigurumi, niños, algodon, hecho a mano">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Monica, Orietta">
-    <meta name="date" content="2023-05-21">
-
-    <meta name="twitter:title" content="Monica - Peluches de Lana">
-    <meta name="twitter:description" content="Compra tus peluches de lana hechos totalmente a mano, 100% algodon y de gran calidad. Peluches tiernos, ideales para niños y niñas.">
-    <meta name="twitter:image" content="https://hecho-a-mano-con-amor.netlify.app/build/img/Osito_Tuto1.webp">
-    <meta name="twitter:url" content="https://hecho-a-mano-con-amor.netlify.app/">
-
-    <meta property="og:title" content="Monica - Peluches de Lana">
-    <meta property="og:description" content="Compra tus peluches de lana hechos totalmente a mano, 100% algodon y de gran calidad. Peluches tiernos, ideales para niños y niñas.">
-    <meta property="og:image" content="https://hecho-a-mano-con-amor.netlify.app/build/img/Osito_Tuto1.webp">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://hecho-a-mano-con-amor.netlify.app/">
-    
-    <title>Monica - Peluches de Lana</title>
-    <link rel="icon" href="build/img/logo_manos.webp">
-    <link rel="preload" href="build/css/app.css" as="style">
-    <link rel="stylesheet" href="build/css/app.css">
-</head>
 <body>
 
     <!--HEADER-->
@@ -52,20 +19,85 @@
         <div class="contenedor-navegacion">
             <div class="navegacion">
                 <nav>
-                    <a href="/">Inicio</a>
-                    <a class="selec" href="tienda.html">Tiendita</a>
-                    <a href="nosotros.html">Nosotros</a>
-                    <a href="contacto.html">Contacto</a>
+                    <a class="selec" href="/">Inicio</a>
+                    <a href="tienda.php">Tiendita</a>
+                    <a href="nosotros.php">Nosotros</a>
+                    <a href="contacto.php">Contacto</a>
                 </nav>
             </div>
         </div>
+
+        <div class="contenedor-hero">
+            <div class="slider">
+                <div class="slides">
+
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+    
+                    <div class="slide first">
+                        <img id="slide1" src="build/img/oruga3.webp" alt="imagen hero">
+                    </div>
+                    <div class="slide">
+                        <img id="slide2" src="build/img/Nenuco_de_apego1.webp" alt="imagen hero">
+                    </div>
+                    <div class="slide">
+                        <img id="slide3" src="build/img/Pesebre_3_piezas1.webp" alt="imagen hero">
+                    </div>
+    
+                    <div class="navegation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                    </div>
+                    <!-- <div class="fondo-hero"></div> -->
+    
+                </div> <!--end slides-->
+                <div class="navegation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+            </div> <!--end slider-->
+        </div>
+        
     </header>
 
-    <main class="tienda-peluches">
+    <!--INFO ENVIO-->
+
+    <main class="contenedor-envio">
+        <h1>Peluches de lana hechos a mano</h1>
+        <div class="envio">
+            <div class="svg-camion">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-truck-delivery" width="150" height="150" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                    <path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                    <path d="M5 17h-2v-4m-1 -8h11v12m-4 0h6m4 0h2v-6h-8m0 -5h5l3 5" />
+                    <path d="M3 9l4 0" />
+                </svg>
+            </div>
+
+            <p>Envíos solo a región Metropolitana de Chile</p>
+
+            <div class="imagen-region">
+                <picture>
+                    <source srcset="build/img/region_m.webp" type="image/webp">
+                    <source srcset="build/img/region_m.png" type="image/png">
+                    <img src="build/img/region_m.png" alt="region metropolitana">
+                </picture>
+            </div>
+        </div>
+    </main>
+
+    <!--TIENDA-->
+
+    <section class="tienda-peluches">
+        <h2>Nuestros Peluches</h2>
         <div class="contenido-tienda">
             <div class="tienda">
                 <div class="producto">
-                    <a href="osito_tuto.html">
+                    <a href="osito_tuto.php">
                         <picture>
                             <source srcset="build/img/Osito_Tuto1.webp" type="image/webp">
                             <source srcset="build/img/Osito_Tuto1.jpg" type="image/jpeg">
@@ -76,7 +108,7 @@
                     </a>
                 </div>
                 <div class="producto">
-                    <a href="rinoceronte_peluche.html">
+                    <a href="rinoceronte_peluche.php">
                         <picture>
                             <source srcset="build/img/Rinoceronte_peluche1.webp" type="image/webp">
                             <source srcset="build/img/Rinoceronte_peluche1.jpg" type="image/jpeg">
@@ -87,7 +119,7 @@
                     </a>
                 </div>
                 <div class="producto">
-                    <a href="oruga.html">
+                    <a href="oruga.php">
                         <picture>
                             <source srcset="build/img/oruga1.webp" type="image/webp">
                             <source srcset="build/img/oruga1.jpg" type="image/jpeg">
@@ -98,7 +130,7 @@
                     </a>
                 </div>
                 <div class="producto">
-                    <a href="unicornio.html">
+                    <a href="unicornio.php">
                         <picture>
                             <source srcset="build/img/unicornio1.webp" type="image/webp">
                             <source srcset="build/img/unicornio1.jpg" type="image/jpeg">
@@ -109,7 +141,7 @@
                     </a>
                 </div>
                 <div class="producto">
-                    <a href="jirafa.html">
+                    <a href="jirafa.php">
                         <picture>
                             <source srcset="build/img/jirafa1.webp" type="image/webp">
                             <source srcset="build/img/jirafa1.jpg" type="image/jpeg">
@@ -120,7 +152,7 @@
                     </a>
                 </div>
                 <div class="producto">
-                    <a href="pesebre_3_piezas.html">
+                    <a href="pesebre_3_piezas.php">
                         <picture>
                             <source srcset="build/img/Pesebre_3_piezas1.webp" type="image/webp">
                             <source srcset="build/img/Pesebre_3_piezas1.jpg" type="image/jpeg">
@@ -131,7 +163,7 @@
                     </a>
                 </div>
                 <div class="producto">
-                    <a href="pesebre_4_piezas.html">
+                    <a href="pesebre_4_piezas.php">
                         <picture>
                             <source srcset="build/img/Pesebre_4_piezas1.webp" type="image/webp">
                             <source srcset="build/img/Pesebre_4_piezas1.jpg" type="image/jpeg">
@@ -142,7 +174,7 @@
                     </a>
                 </div>
                 <div class="producto">
-                    <a href="adornos_navidenos_pack.html">
+                    <a href="adornos_navidenos_pack.php">
                         <picture>
                             <source srcset="build/img/Adornos_navideños_pack1.webp" type="image/webp">
                             <source srcset="build/img/Adornos_navideños_pack1.jpg" type="image/jpeg">
@@ -153,7 +185,7 @@
                     </a>
                 </div>
                 <div class="producto">
-                    <a href="nenuco_de_apego.html">
+                    <a href="nenuco_de_apego.php">
                         <picture>
                             <source srcset="build/img/Nenuco_de_apego1.webp" type="image/webp">
                             <source srcset="build/img/Nenuco_de_apego1.jpg" type="image/jpeg">
@@ -164,7 +196,7 @@
                     </a>
                 </div>
                 <div class="producto">
-                    <a href="bolso_trapillo.html">
+                    <a href="bolso_trapillo.php">
                         <picture>
                             <source srcset="build/img/Bolso_Trapillo1.webp" type="image/webp">
                             <source srcset="build/img/Bolso_Trapillo1.jpg" type="image/jpeg">
@@ -175,7 +207,7 @@
                     </a>
                 </div>
                 <div class="producto">
-                    <a href="llavero_einstein.html">
+                    <a href="llavero_einstein.php">
                         <picture>
                             <source srcset="build/img/llavero_einstein1.webp" type="image/webp">
                             <source srcset="build/img/llavero_einstein1.jpg" type="image/jpeg">
@@ -213,48 +245,9 @@
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="footer-contenido">
-            <div class="footer-contacto">
-                <p>Contacto:</p>
-
-                <div class="contacto-whatsapp">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
-                        <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
-                    </svg>
-                    <p>+56979059414</p>
-                </div>
-                <div class="contacto-mail">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <rect x="3" y="5" width="18" height="14" rx="2" />
-                        <polyline points="3 7 12 13 21 7" />
-                    </svg>
-                    <p>hechoamanoconamor17@gmail.com</p>
-                </div>
-            </div>
-
-            <div class="footer-redes_sociales">
-                <p>Siguenos:</p>
-                <a href="https://www.facebook.com/crochetyamigurumisantiago/" target="_blank">
-                    <picture>
-                        <source srcset="build/img/logo_facebook.webp" type="image/webp">
-                        <source srcset="build/img/logo_facebook.jpg"  type="image/jpeg">
-                        <img src="build/img/logo_facebook.jpg" alt="logo facebook">
-                    </picture>
-                </a>
-                <a href="https://www.instagram.com/crochetyamigurumi/" target="_blank">
-                    <picture>
-                        <source srcset="build/img/logo_instagram.webp" type="image/webp">
-                        <source srcset="build/img/logo_instagram.jpg"  type="image/jpeg">
-                        <img src="build/img/logo_instagram.jpg" alt="logo instagram">
-                    </picture>
-                </a>
-            </div>
-        </div>
-    </footer>
+<?php
+    include 'include/templates/footer.php'
+?>
 
     <script src="build/js/bundle.min.js"></script>
 </body>

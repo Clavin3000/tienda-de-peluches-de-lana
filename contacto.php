@@ -1,40 +1,7 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GRG6T9T427"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+<?php
+    include 'include/templates/head.php';
+?>
 
-    gtag('config', 'G-GRG6T9T427');
-    </script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="descripcion" content="Compra tus peluches de lana hechos totalmente a mano, 100% algodon y de gran calidad. Peluches tiernos, ideales para niños y niñas.">
-    <meta name="keywords" content="peluche, lana, amigurumi, niños, algodon, hecho a mano">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Monica, Orietta">
-    <meta name="date" content="2023-05-21">
-
-    <meta name="twitter:title" content="Monica - Peluches de Lana">
-    <meta name="twitter:description" content="Compra tus peluches de lana hechos totalmente a mano, 100% algodon y de gran calidad. Peluches tiernos, ideales para niños y niñas.">
-    <meta name="twitter:image" content="https://hecho-a-mano-con-amor.netlify.app/build/img/Osito_Tuto1.webp">
-    <meta name="twitter:url" content="https://hecho-a-mano-con-amor.netlify.app/">
-
-    <meta property="og:title" content="Monica - Peluches de Lana">
-    <meta property="og:description" content="Compra tus peluches de lana hechos totalmente a mano, 100% algodon y de gran calidad. Peluches tiernos, ideales para niños y niñas.">
-    <meta property="og:image" content="https://hecho-a-mano-con-amor.netlify.app/build/img/Osito_Tuto1.webp">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://hecho-a-mano-con-amor.netlify.app/">
-    
-    <title>Monica - Peluches de Lana</title>
-    <link rel="icon" href="build/img/logo_manos.webp">
-    <link rel="preload" href="build/css/app.css" as="style">
-    <link rel="stylesheet" href="build/css/app.css">
-</head>
 <body>
 
     <!--HEADER-->
@@ -53,9 +20,9 @@
             <div class="navegacion">
                 <nav>
                     <a href="/">Inicio</a>
-                    <a href="tienda.html">Tiendita</a>
-                    <a href="nosotros.html">Nosotros</a>
-                    <a class="selec" href="contacto.html">Contacto</a>
+                    <a href="tienda.php">Tiendita</a>
+                    <a href="nosotros.php">Nosotros</a>
+                    <a class="selec" href="contacto.php">Contacto</a>
                 </nav>
             </div>
         </div>
@@ -73,7 +40,7 @@
                         <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
                         <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
                     </svg>
-                    <p>+56979059414</p>
+                    <p>+56942696174</p>
                 </div>
                 <div class="contacto-mail">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -102,7 +69,7 @@
                 </div>
             </div>
 
-            <form class="formulario" id="formulario" name="contacto" method="POST" data-netlify="true" onSubmit="submit" data-netlify-honeypot="bot-field" action="/contacto-enviado.html">
+            <form class="formulario" id="formulario" name="contacto" method="POST" data-netlify="true" onSubmit="submit" data-netlify-honeypot="bot-field" action="/contacto-enviado.php">
                 <input class="d-none" name="bot-field">
                 <div class="campo">
                     <label class="campo-label" for="nombre">Nombre:</label>
@@ -148,53 +115,14 @@
         <section class="informacion-envio">
             <h2>INFORMACIÓN DEL ENVÍO</h2>
             <p>
-                A regiones despachamos por chilexpress por pagar o se agrega el valor del envío al producto, dentro de Santiago a convenir, o despacho a domicilio con costo adicional, segun la comuna. 
+                Despacho a convenir. Despacho a domicilio con costo adicional, segun la comuna.
             </p>
         </section>
     </div>
 
-    <footer class="footer">
-        <div class="footer-contenido">
-            <div class="footer-contacto">
-                <p>Contacto:</p>
-
-                <div class="contacto-whatsapp">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
-                        <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
-                    </svg>
-                    <p>+56979059414</p>
-                </div>
-                <div class="contacto-mail">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <rect x="3" y="5" width="18" height="14" rx="2" />
-                        <polyline points="3 7 12 13 21 7" />
-                    </svg>
-                    <p>hechoamanoconamor17@gmail.com</p>
-                </div>
-            </div>
-
-            <div class="footer-redes_sociales">
-                <p>Siguenos:</p>
-                <a href="https://www.facebook.com/crochetyamigurumisantiago/" target="_blank">
-                    <picture>
-                        <source srcset="build/img/logo_facebook.webp" type="image/webp">
-                        <source srcset="build/img/logo_facebook.jpg"  type="image/jpeg">
-                        <img src="build/img/logo_facebook.jpg" alt="logo facebook">
-                    </picture>
-                </a>
-                <a href="https://www.instagram.com/crochetyamigurumi/" target="_blank">
-                    <picture>
-                        <source srcset="build/img/logo_instagram.webp" type="image/webp">
-                        <source srcset="build/img/logo_instagram.jpg"  type="image/jpeg">
-                        <img src="build/img/logo_instagram.jpg" alt="logo instagram">
-                    </picture>
-                </a>
-            </div>
-        </div>
-    </footer>
+<?php
+    include 'include/templates/footer.php'
+?>
 
     <script src="build/js/bundle.min.js"></script>
 </body>
